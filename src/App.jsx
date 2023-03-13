@@ -1,14 +1,13 @@
-import { Stars } from "@react-three/drei";
+import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'; 
 
 const App = () => {
   return (
-    <div>
       <BrowserRouter>
-        <div class="relative z-0 bg-primary">
-          <div class="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />
           </div>
@@ -23,7 +22,6 @@ const App = () => {
           </div>
         </div>
       </BrowserRouter>
-    </div>
   )
 }
 
